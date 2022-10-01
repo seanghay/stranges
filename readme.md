@@ -23,6 +23,11 @@ npm install stranges
 ### Parse single range
 
 ```js
+
+// CJS
+const { default: parse } = require('stranges');
+
+// ESM
 import parse from 'stranges';
 
 const iterator = parse('0-9'); // Symbol.iterator
