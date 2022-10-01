@@ -117,3 +117,14 @@ declare function parse(input: string, separator?: string): Generator<number>;
 
 export { parse as default, length, parseAsArray };
 ```
+
+## Benchmark
+
+
+```
+# calculate length of range (1-1000000000)
+ok ~653 ms (0 s + 653069918 ns)
+
+all benchmarks completed
+ok ~653 ms (0 s + 653069918 ns)
+```
