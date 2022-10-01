@@ -85,6 +85,33 @@ parseAsArray('0-10')
 // => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
+---
 
-## API
+## Types
+
+```typescript
+/**
+ * Calculate total count of ranges.
+ * @param input a range string
+ * @param separator a separator use to split each range.
+ * @returns a total count of ranges.
+ */
+declare function length(input: string, separator?: string): number;
+/**
+ * Create an array filled with range values.
+ * @param input a range string
+ * @param separator a separator use to split each range.
+ * @returns an array filled with range values.
+ */
+declare function parseAsArray(input: string, separator?: string): number[];
+/**
+ * Create an iterator of ranges.
+ * @param input a range string
+ * @param separator a separator use to split each range.
+ * @returns an iterator of each number
+ */
+declare function parse(input: string, separator?: string): Generator<number>;
+
+export { parse as default, length, parseAsArray };
+```
 
