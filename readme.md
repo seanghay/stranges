@@ -1,4 +1,4 @@
-# Stranges
+# ⚡️ Stranges
 
 An advanced number range parser. It parses number ranges from string.
 
