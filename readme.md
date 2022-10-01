@@ -16,6 +16,7 @@ npm install stranges
 - Parse inverted range. e.g. `10-1`
 - Returns an `Iterator` instead of an `Array` which makes thing faster when iterate over million of records. 
 - Reduce memory usage.
+- Lightweight (1kB no-gzipped)
 
 ---
 
@@ -119,7 +120,6 @@ export { parse as default, length, parseAsArray };
 ```
 
 ## Benchmark
-
 
 ```
 # calculate length of range (1-1000000000)
