@@ -1,3 +1,4 @@
+// most work here were inspired/copied from https://github.com/euank/node-parse-numeric-range/blob/master/index.js
 const NUM_REGEX = /^-?\d+$/;
 const RANGE_REGEX = /^(-?\d+)(-|\.\.\.?|\u2025|\u2026|\u22EF)(-?\d+)$/;
 
