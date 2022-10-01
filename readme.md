@@ -30,6 +30,7 @@ for (const num of iterator) {
   console.log(num);
 }
 
+// => 0
 // => 1
 // => 2
 // => 3
@@ -52,6 +53,7 @@ for (const num of iterator) {
   console.log(num);
 }
 
+// => 0
 // => 1
 // => 2
 // => 3
@@ -115,4 +117,3 @@ declare function parse(input: string, separator?: string): Generator<number>;
 
 export { parse as default, length, parseAsArray };
 ```
-
