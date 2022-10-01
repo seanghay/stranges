@@ -2,6 +2,12 @@
 const NUM_REGEX = /^-?\d+$/;
 const RANGE_REGEX = /^(-?\d+)(-|\.\.\.?|\u2025|\u2026|\u22EF)(-?\d+)$/;
 
+/**
+ * Calculate total count of ranges.
+ * @param input a range string 
+ * @param separator a separator use to split each range.
+ * @returns a total count of ranges.
+ */
 export function length(input: string, separator: string = ",") {
 	let size = 0;
 	const ranges = input.split(separator);
@@ -29,10 +35,22 @@ export function length(input: string, separator: string = ",") {
 	return size
 }
 
+/**
+ * Create an array filled with range values.
+ * @param input a range string 
+ * @param separator a separator use to split each range.
+ * @returns an array filled with range values.
+ */
 export function parseAsArray(input: string, separator: string = ","): number[] {
 	return Array.from(parse(input, separator));
 }
 
+/**
+ * Create an iterator of ranges.
+ * @param input a range string 
+ * @param separator a separator use to split each range.
+ * @returns an iterator of each number
+ */
 export default function* parse(
 	input: string,
 	separator: string = ","
