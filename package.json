@@ -1,0 +1,33 @@
+{
+	"name": "stranges",
+	"version": "0.0.0",
+	"description": "An integer range parser",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"browser": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup index.ts --format esm,cjs --dts --minify",
+		"test": "vitest --run"
+	},
+	"keywords": [
+		"range",
+		"number",
+		"integer"
+	],
+	"author": {
+		"name": "Seanghay Yath",
+		"email": "seanghay.dev@gmail.com",
+		"url": "https://github.com/seanghay"
+	},
+	"license": "Apache-2.0",
+	"devDependencies": {
+		"nanobench": "^3.0.0",
+		"tsup": "^6.2.3",
+		"typescript": "^4.8.4",
+		"vitest": "^0.23.4"
+	}
+}
