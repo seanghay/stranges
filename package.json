@@ -1,6 +1,6 @@
 {
 	"name": "stranges",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"description": "An integer range parser",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
