@@ -2,6 +2,7 @@
 
 An advanced number range parser. It parses number ranges from string.
 
+[![test](https://github.com/seanghay/stranges/actions/workflows/test.yml/badge.svg)](https://github.com/seanghay/stranges/actions/workflows/test.yml)
 
 ## Installation
 
