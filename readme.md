@@ -46,6 +46,10 @@ for (const num of iterator) {
 ### Parse multiple ranges
 
 ```js
+// CJS
+const { default: parse } = require('stranges');
+
+// ESM
 import parse from 'stranges';
 
 const iterator = parse('0-3,3-0'); // Symbol.iterator
@@ -69,6 +73,10 @@ for (const num of iterator) {
 ### Calculate Length of Ranges
 
 ```js
+// CJS
+const { length } = require('stranges');
+
+// ESM
 import { length } from 'stranges';
 
 length('0-9,20-29')
@@ -83,6 +91,10 @@ Allocate an array filled with values.
 
 
 ```js
+// CJS
+const { parseAsArray } = require('stranges');
+
+// ESM 
 import { parseAsArray } from 'stranges';
 
 parseAsArray('0-10')
